@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Proyectos Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding:.20px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card h2 {
+            color: #2c3e50;
+        }
+        
+        .project-card p {
+            color: #7f8c8d;
+        }
+        
+        .project-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .project-card a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mis Mini Proyectos Web</h1>
+    
+    <p>Bienvenido a mi colección de mini proyectos web. Aquí encontrarás diferentes aplicaciones que he desarrollado mientras aprendo desarrollo web.</p>
+    
+    <div class="projects">
+        <div class="project-card">
+            <h2>Conversor de Temperatura</h2>
+            <p>Una herramienta interactiva para convertir entre grados Celsius y Fahrenheit con actualizaciones en tiempo real.</p>
+            <a href="temperatura/index.html">Ver proyecto</a>
+        </div>
+        
+        <div class="project-card">
+            <h2>Selector de Colores</h2>
+            <p>Experimenta con valores RGB en formato decimal o hexadecimal para crear y visualizar colores personalizados.</p>
+            <a href="color-picker/index.html">Ver proyecto</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Estos proyectos son parte de mi aprendizaje en desarrollo web frontend.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color Picker</title>
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Color picker</h1>
+      <div>
+        <input type="radio" name="decHex" id="dec" checked/>Decimal
+        <input type="radio" name="decHex" id="hex"/>Hex
+      </div>
+      <label class="item">Red</label>
+      <input class="item" type="number" id="red" value="0"/>
+      <label class="item">Green</label>
+      <input class="item" type="number" id="green" value="0"/>
+      <label class="item">Blue</label>
+      <input class="item" type="number" id="blue" value="0"/>
+      <div id="panel" class="item"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
