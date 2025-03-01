@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color picker intuitive</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Color picker</h1>
+      <div>
+        <input type="radio" name="decHex" id="dec" checked/>Decimal
+        <input type="radio" name="decHex" id="hex"/> Hex
+      </div>
+
+      <!-- Control para el valor rojo -->
+      <label>Red</label>
+      <input type="number" name="red" value="0"/>
+
+      <!-- Control para el valor verde -->
+      <label>Green</label>
+      <input type="number" name="green" value="0"/>
+
+      <!-- Control para el valor blue -->
+      <label>Blue</label>
+      <input type="number" name="blue" value="0"/>
+     
+      <!-- Panel que mostrara el color resultante como fondo-->
+      <div id="panel"></div>
+
+      <script src="script.js" type="text/javascript"></script>
+
+    </div>
+  </body>
+</html>
