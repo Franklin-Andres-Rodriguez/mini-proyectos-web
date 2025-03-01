@@ -1,0 +1,222 @@
+/* Importa una fuente personalizada de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    /* El primer color es el color de inicio y el segundo es el color de finalización del gradiente */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+
+}
+
+p {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 20px;
+    position: relative;
+}
+
+.header-container .logo {
+    position: absolute;
+    top: 20px; /* Ajusta estos valores para cambiar la posición del logotipo */
+    left: 20px;
+    max-width: 100px; /* Este valor debe ser el mismo que el width en el HTML */
+    height: auto;
+}
+
+.header-container h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; /* Esto hace que la barra de navegación se quede encima de otros elementos */
+}
+
+nav a {
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3 ease;
+}
+
+nav a:hover {
+    background-color: #007BFF;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.flex-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /*centra los elementos verticalmente*/
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+
+
+
+.flex-container img, .flex-container p {
+    max-width: 45%;
+    margin: 1em;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+
+/*esto es la galeria de fotos */
+.ideas-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.ideas-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2em;
+    justify-items: center;
+    margin-bottom: 20px;
+    
+    
+}
+
+.gallery a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3 ease;/* Transición suave al aplicar el efecto de hover */
+}
+
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordes suavemente redondeados en las imágenes */
+}
+
+
+.gallery img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);  /* Hace que la imagen crezca un poco al pasar el cursor por encima */
+}
+
+.gallery figcaption {
+    padding: 10px;
+    text-align: center;
+    color: #666;  /* Un color suave y oscuro para el texto */
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not interfere with other items */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    clear: both;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-container .logo {
+        position: static;
+        min-width: 50px; /*ajusta el tamanp del logo en pantalla pequena */
+        margin-bottom: 10px; /*centra el logo*/
+
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container img, .flex-container p {
+        max-width: 100%;
+    }
+
+    .gallery {
+        width: 100%;
+    }
+    
+    
+}
